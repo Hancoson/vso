@@ -1,0 +1,237 @@
+/**
+ *@author Hancoson
+ *@URL http://www.vso.pw;
+ *@date 2014-12-01
+**/
+/******reset--开始*******/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend { 
+    font-family: inherit; 
+    font-weight: inherit; 
+    font-style: inherit; 
+    font-size: 100%; 
+    outline: 0; 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+} 
+:focus { 
+    outline: 0; 
+} 
+body { 
+    background: white; 
+    line-height: 1; 
+    color: black; 
+} 
+ol, ul { 
+    list-style: none; 
+} 
+table { 
+    border-collapse: separate; 
+    border-spacing: 0; 
+} 
+caption, th, td { 
+    font-weight: normal; 
+} 
+blockquote:before, blockquote:after, q:before, q:after { 
+    content: “”; 
+} 
+blockquote, q { 
+    quotes: “” “”; 
+}
+/*******reset--结束*******/
+
+/*******global--开始*******/
+html{
+    -webkit-text-size-adjust:none;
+    font-size: 62.5%
+}
+body { 
+    font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontVsoicon,sans-serif; 
+    margin:0; 
+    font-size: 1.4rem;
+    color: #333;
+    background: #f8f8f8;
+}
+a,a:hover{
+    text-decoration:none; 
+}
+hr{
+    height:1px;
+    border:none;
+    border-top:1px solid #c6c6c6;
+}
+.clearfix:after {
+    content: "."; 
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* End hide from IE-mac */
+.fl{ 
+    float:left;
+}
+.fr{ 
+    float:right;
+}
+.hide{ 
+    display:none
+}
+.show{ 
+    display:block
+}
+.font12{
+    font-size: 1.2rem;  
+}
+.font14{
+    font-size: 1.4rem;
+}
+.font16{
+    font-size: 1.6rem;
+}
+.font18{
+    font-size: 1.8rem;
+}
+.font24{
+    font-size: 2.4rem;
+}
+.font20{
+    font-size: 2.0rem;
+}
+.font30{
+    font-size: 3.0rem;
+}
+.c-white{ 
+    color:#fff
+}
+.c-red{ 
+    color:#c90800
+}
+.c-blue{
+    color: #00519c
+}
+.c-back{ 
+    color:#333
+}
+.c-grey{
+    color: #858585
+}
+.c-grey1{
+    color: #626970
+}
+.c-grey2{
+    color: #c1c1c1
+}
+.c-orange{
+    color: #ed621e
+}
+
+.mt20{
+    margin-top: 2rem;
+}
+.mt30{
+    margin-top: 3rem;
+}
+.mt50{
+    margin-top:5rem
+}
+.mt10{
+    margin-top:10px
+}
+.mr20{
+    margin-right: 20rem
+}
+.mb15{
+    margin-bottom:1.5rem
+}
+
+.br3{
+	-moz-border-radius:0.3rem; 
+	-webkit-border-radius:0.3rem; 
+	border-radius:0.3rem;
+}
+.br5{
+	-moz-border-radius:0.5rem;
+	-webkit-border-radius:0.5rem; 
+	border-radius:0.5rem;
+}
+.br8{
+	-moz-border-radius:0.8rem;
+	-webkit-border-radius:0.8rem; 
+	border-radius:0.8rem;
+}
+	
+/*******global--结束*******/
+/*******common--开始*******/
+.container{
+    width: 100%
+}
+.content{
+    width: 1200px;
+    margin: 0 auto
+}
+
+.pag-bottmo{
+    width: 1200px;
+    margin: 40px auto 20px;
+    text-align: center;
+}
+    .pag-bottmo a span{
+        color: #333;
+        padding: 5px 8px;
+    }
+
+    .pag-bottmo a:hover span,.pag-bottmo .check{
+        color: #fff;
+        background: #00519c
+    }
+
+/*分页*/
+/*******common--结束*******/
+/***********************   header    ************************/
+.header{
+	width:100%;
+    height: 5rem;
+    line-height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px #0587C8 solid;
+    background: #0e90d2;
+    color: #fff;
+    font-size: 1.6rem;
+}
+    .header ul a li{
+        float: left;
+        padding: 0 3rem;
+        color: #fff
+    }
+    .header ul a:hover li,.active{
+        background: #0A83C0
+    } 
+/***********************   /header  ***********************/
+
+/***********************   footer    ************************/
+.footer{
+	background: #555;
+    color: #999;
+    padding: 3rem 0;
+}
+    .footer a{
+        color: #fff
+    }
+    .footer a:hover{
+        color: #EDEDED
+    }
+
+/***********************   /footer  **********************
