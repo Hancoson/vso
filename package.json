@@ -1,0 +1,43 @@
+{
+  "name": "by_hancoson",
+  "version": "0.0.1",
+  "description": "vso framework",
+  "main": "index.js",
+  "repository": "",
+  "keywords": [
+    "hancoson",
+    "vso",
+    "async",
+    "cli",
+    "minify",
+    "uglify",
+    "build",
+    "lodash",
+    "unit",
+    "test",
+    "qunit",
+    "nodeunit",
+    "server",
+    "init",
+    "scaffold",
+    "make",
+    "jake",
+    "tool"
+  ],
+  "author": "Hancoaon <Hancoaon@163.com>",
+  "homepage": "http://www.vso.pw",
+  "devDependencies": {
+      "grunt": "~0.4.1",
+      "grunt-contrib-copy": "*",
+      "grunt-contrib-concat":"*",
+      "grunt-contrib-jshint":"*",
+      "grunt-contrib-uglify": "~0.2.0",
+      "grunt-css-combo": ">=0.2.2",
+      "grunt-contrib-connect": "~0.3.0",
+      "grunt-contrib-cssmin": "~0.6.1",
+      "grunt-contrib-watch": "~0.3.1",
+      "grunt-contrib-requirejs":"~0.4.4",
+      "matchdep": "~0.1.2"
+  },
+  "pages":["index"]
+}
