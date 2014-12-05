@@ -1,8 +1,8 @@
 {
-  "name": "by_hancoson",
+  "name": "VSO Framework",
   "version": "0.0.1",
   "description": "vso framework",
-  "main": "index.js",
+  "main": "vso.js",
   "repository": "",
   "keywords": [
     "hancoson",

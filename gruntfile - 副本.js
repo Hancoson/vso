@@ -26,8 +26,7 @@ module.exports = function(grunt){
         },
         concat: {
             options: {
-                separator: ';',
-                banner: '/* \n *@name: <%= pkg.name %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/\n'
+                separator: ';'
             },
             page: {
                  src: ['src/pages/<%= grunt.config.get("page") %>/*.js'],
@@ -36,7 +35,7 @@ module.exports = function(grunt){
         },
         css_combo: {
             options: {
-                banner: '/* \n *@name: <%= pkg.name %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/\n'
+                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
             },
             page: {
                 src: 'src/pages/<%= grunt.config.get("page") %>/index.css',
@@ -47,7 +46,6 @@ module.exports = function(grunt){
             page: {
                 options: {
                     force:true,
-                    banner: '/* \n *@name: <%= pkg.name %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/\n',
                     baseUrl: 'src/pages/<%= grunt.config.get("page") %>',
                     mainConfigFile: 'common/config.js',
                     src:['**/*.js','!jquery.min.js'],
@@ -74,22 +72,22 @@ module.exports = function(grunt){
             }
         },
         cssmin: {
-            options: {
-                banner: '/* \n *@name: <%= pkg.name %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/'
-            },
+            
             common: {
                 expand:true,
                 cwd:'common/',
-                src:'**/*.css',
-                dest:'build/common/',
+                src:['**/*.css','!**/*.min.css'],
+                dest:'build/common',
                 ext:'.min.css'
             },
             page: {
                 expand:true,
-                cwd:'build/pages/<%= grunt.config.get("page") %>/',
+                src:'build/pages/<%= grunt.config.get("page") %>/index.js',
+                dest: 'build/pages/<%= grunt.config.get("page") %>/index.min.js'
+                /*cwd:'build/pages/<%= grunt.config.get("page") %>/',
                 src:'index.css',
                 dest:'build/pages/<%= grunt.config.get("page") %>/',
-                ext:'.min.css'
+                ext:'.min.css'*/
             }
         },
         imagemin:{
